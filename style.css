@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.input-field label {
+    font-weight: bold;
+    color: #555;
+}
+
+.input-field input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.input-field span {
+    width: 120px;
+    text-align: right;
+    font-weight: bold;
+    color: #666;
+}
+
+.input-with-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.increment-btn,
+.decrement-btn {
+    width: auto;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.increment-btn {
+    background-color: #28a745;
+}
+
+.increment-btn:hover {
+    background-color: #218838;
+}
+
+.decrement-btn {
+    background-color: #dc3545;
+}
+
+.decrement-btn:hover {
+    background-color: #c82333;
+}
+
+.increment-btn,
+.decrement-btn {
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#generateReport {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#generateReport:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+#generateReport:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.report-container {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    display: none;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre;
+    color: #333;
+}
+
+.report-container.show {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

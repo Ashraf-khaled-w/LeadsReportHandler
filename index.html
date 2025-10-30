@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leads Handling Report</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Leads Handling Report</h1>
+      <div class="input-group">
+        <div class="input-field">
+          <label for="totalLeads">Total Leads:</label>
+          <input type="number" id="totalLeads" min="0" />
+        </div>
+        <div class="input-field">
+          <label for="wrongNumber">Wrong Number:</label>
+          <div class="input-with-buttons">
+            <button class="decrement-btn" id="wrongNumberBtnMinus">-1</button>
+            <input type="number" id="wrongNumber" min="0" readonly />
+            <button class="increment-btn" id="wrongNumberBtnPlus">+1</button>
+          </div>
+        </div>
+        <div class="input-field">
+          <label for="noAnswer">No Answer:</label>
+          <span id="noAnswer">0</span>
+        </div>
+        <div class="input-field">
+          <label for="answered">Answered:</label>
+          <div class="input-with-buttons">
+            <button class="decrement-btn" id="answeredBtnMinus">-1</button>
+            <input type="number" id="answered" min="0" readonly />
+            <button class="increment-btn" id="answeredBtnPlus">+1</button>
+          </div>
+        </div>
+        <div class="input-field">
+          <label for="gatekeeper">Gatekeeper:</label>
+          <div class="input-with-buttons">
+            <button class="decrement-btn" id="gatekeeperBtnMinus">-1</button>
+            <input type="number" id="gatekeeper" min="0" readonly />
+            <button class="increment-btn" id="gatekeeperBtnPlus">+1</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <button id="generateReport">Get Report</button>
+      <div id="report" class="report-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
