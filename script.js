@@ -29,9 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const total = parseInt(inputs.totalLeads.value) || 0;
     const wrong = parseInt(inputs.wrongNumber.value) || 0;
     const answered = parseInt(inputs.answered.value) || 0;
-    const gatekeeper = parseInt(inputs.gatekeeper.value) || 0;
-
-    const noAnswer = total - (wrong + answered + gatekeeper);
+    // Gatekeeper is not included in the no answer calculation
+    const noAnswer = total - (wrong + answered);
     inputs.noAnswer.textContent = noAnswer >= 0 ? noAnswer : 0;
   }
 
