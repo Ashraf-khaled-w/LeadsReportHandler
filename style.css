@@ -104,10 +104,11 @@ h1 {
     transition: background-color 0.3s;
 }
 
+
 #generateReport {
     display: block;
     width: 200px;
-    margin: 20px auto;
+    margin: 20px auto 10px auto;
     padding: 12px 24px;
     background-color: #007bff;
     color: white;
@@ -129,6 +130,35 @@ h1 {
 }
 
 #generateReport:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#resetFields {
+    display: block;
+    width: 200px;
+    margin: 0 auto 20px auto;
+    padding: 12px 24px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#resetFields:hover {
+    background-color: #b71c1c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+#resetFields:active {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

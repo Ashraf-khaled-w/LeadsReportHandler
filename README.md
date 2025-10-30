@@ -30,8 +30,9 @@ A simple, user-friendly web application for tracking and managing lead contact a
      - Gatekeeper
    - "No Answer" is automatically calculated as:
      ```
-     No Answer = Total Leads - (Wrong Number + Answered + Gatekeeper)
+     No Answer = Total Leads - (Wrong Number + Answered)
      ```
+   - Gatekeeper is tracked and shown in the report, but does not affect the "No Answer" calculation.
 
 3. **Using the Counter Buttons**
 
